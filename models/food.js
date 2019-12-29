@@ -4,9 +4,8 @@ const { Schema, model } = mongoose;
 
 const foodSchema = new Schema({
   name: { type: String, required: true },
-  convenience: { type: mongoose.Types.ObjectId, ref: "Conven" },
   category: [{ type: String }],
-  combination: [[{ type: mongoose.Types.ObjectId, ref: "Food" }]]
+  combinations: [{ type: mongoose.Types.ObjectId, ref: "combi" }]
 });
 
 const Food = model("Food", foodSchema);

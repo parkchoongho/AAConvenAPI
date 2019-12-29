@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const helmet = require("helmet");
 
-const conven = require("./router/conven");
+const combi = require("./router/combi");
 const food = require("./router/food");
 
 const dbURI = process.env.MONGODB_URI || "mongodb://localhost/AAConven";
@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.use("/api/conven", conven);
+app.use("/api/combi", combi);
 app.use("/api/food", food);
 
 app.use(() => mongoose.disconnect());

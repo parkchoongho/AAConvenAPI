@@ -16,15 +16,16 @@
 
 # DB 구조
 
-- ### Convenience
+- ### Food
+
+  - name
+  - category
+  - combinations
+  
+- ### Combination
 
   - name
   - foods
 
-- ### Food
 
-  - name
-  - convenience
-  - category
-  - combination
 

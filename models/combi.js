@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const { Schema, model } = mongoose;
 
-const convenSchema = new Schema({
+const combiSchema = new Schema({
   name: { type: String, required: true },
   foods: [{ type: mongoose.Types.ObjectId, ref: "Food" }]
 });
 
-const Conven = model("Conven", convenSchema);
+const Combi = model("Combi", combiSchema);
 
-module.exports = { Conven };
+module.exports = { Combi };
